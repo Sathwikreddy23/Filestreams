@@ -1,5 +1,7 @@
 package Streams;
 
+import java.util.Scanner;
+
 public class Main 
 {
 
@@ -12,5 +14,15 @@ public class Main
    
         CharFileHandler charHandler = new CharFileHandler();
         charHandler.writeAndReadCharStream();
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("please enter a string");
+        
+        String a = sc.nextLine();
+        
+        CountingCharacters c = new CountingCharacters(a);
+        
+        
 	}
 }
